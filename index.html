@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="app" ng-controller="controller">
+
+   <p>{{name}}</p>
+</div>
+
+</body>
+</html>
+<script>
+    var app = angular.module('app',[]);
+    app.controller('controller',function($scope, $interval,$http)
+    {
+        var i = 0 ;
+        $interval(function()
+        {
+          
+            /* var names = ['ahmad','hazem','khaled'];
+            $scope.name = names[i%3];; */
+            $http.get('http://localhost:10080/databaseite//laboratory/show').then(function(response)
+            {
+                $scope.name = response.data;
+            });
+            i++;
+        },1000);
+    })
+</script>

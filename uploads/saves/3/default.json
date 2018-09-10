@@ -1,0 +1,15 @@
+{
+    "table": [
+        "<input type=\"text\" id=\"A1\" class=\"\" value=\"1\">",
+        "<input type=\"text\" id=\"B4\" class=\"calculated\" selected-index=\"1\" expression=\"=SUM(C4)\" value=\"100\">",
+        "<input type=\"text\" id=\"C4\" class=\"selected\" selected-index=\"1\" related-in=\"B4,B4\" value=\"1000\">",
+        "<input type=\"text\" id=\"D4\" class=\"calculated\" selected-index=\"1\" related-in=\"B4\" expression=\"=25+E4\" value=\"=25+E4\">",
+        "<input type=\"text\" id=\"E4\" class=\"\" selected-index=\"1\" related-in=\"D4\" value=\"120\">",
+        "<input type=\"text\" id=\"C5\" class=\"\" selected-index=\"1\" value=\"\">",
+        "<input type=\"text\" id=\"D5\" class=\"\" selected-index=\"1\" value=\"\">",
+        "<input type=\"text\" id=\"B10\" class=\"\" value=\"\">",
+        "<input type=\"text\" id=\"A17\" class=\"\" value=\"1\">"
+    ],
+    "maxcol": "30",
+    "maxrow": "30"
+}

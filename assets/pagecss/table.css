@@ -1,0 +1,98 @@
+body
+{
+    overflow-x: hidden;
+}
+tr td input
+{
+    height:30px;
+    width:100px; 
+    border: solid 1px #e1dada;
+    border-right:solid 0px;
+    cursor:cell;
+}
+tr td input:focus
+{
+    border: dashed 3px green;
+}
+/* class for add on input when user click ctrl+click on input */
+.selected
+{
+    border: dashed 3px green;
+}
+
+tr td input:hover
+{
+    background: #d7d5d5;
+}
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+    max-height:400px;
+    position: relative;
+}
+tr td:first-child
+{
+    background: #4b4b4bd1;
+    color: white;
+    padding: 5px;
+}
+tr td .calculated
+{
+    background: #c6c6c6;
+}
+thead th
+{
+    background: #4b4b4bd1;
+    color: white;
+    text-align:center;
+    padding: 5px;
+}
+/*end table style*/
+
+/* context meue style */
+.dropdown, .dropup 
+{
+    position: absolute;
+}
+#tableDropdown.button
+{
+        display:none;                
+}
+/* end context menue style */
+
+/*style for add note */
+#note
+{
+    width:150px;
+    height:90px;
+    position:absolute;
+
+}
+#note  textarea
+{
+    width:100%;
+    
+    background:#b5b5b5;
+    color: wheat;
+    height:100%;
+    
+}
+#note span  
+{
+   position:absolute;
+    right: 5px;
+    color: #feba3a;
+    font-size: 1.4em;
+    cursor:pointer;
+}
+
+/*end style for add note */
+/*  colborder for resize columns */
+.colborder {
+    cursor: col-resize;
+    height: 100%;
+    margin-left: -6px;
+    position: absolute;
+    width: 5px;
+}
+/*    end colborder resize columns */
